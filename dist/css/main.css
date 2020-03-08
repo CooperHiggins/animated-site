@@ -127,6 +127,7 @@ body {
   margin: .2em;
   min-width: 97%;
   background-color: white;
+  z-index: 1;
 }
 
 .tada-fixed .nav-buttons {
