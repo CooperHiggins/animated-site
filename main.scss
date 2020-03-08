@@ -1,0 +1,334 @@
+$tadaRed: red;
+$tadaGrey: rgb(235, 232, 232);
+$tadaBorderBlack: 2px solid black;
+//make padding and margin utilitites repsonsive based on root element
+* {
+    transition: .2s;
+    padding: 0px;
+    margin: 0px;
+}
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+.bg-grey {
+    background-color: $tadaGrey;
+}
+.bg-red {
+    background-color: red;
+}
+body {
+    margin: 0em;
+}
+.col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 5em;
+    text-align: center;
+}
+.col-2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 5em;
+    text-align: center;
+}
+.col-sm-order-1 {
+    order: 1;
+}
+.container {
+    display: flex;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.pb-5 {
+    padding-bottom: 2.5rem;
+}
+.p-5 {
+    padding: 2.5rem;
+}
+.m-1 {
+    margin: 1rem;
+}
+.align-items {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.text-center {
+    text-align: center;
+}
+.m-auto {
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+.tada-fixed {
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid black;
+    position: fixed;
+    overflow: hidden;
+    margin: .2em;
+    min-width: 97%;
+    background-color: white;
+    .nav-buttons {
+        list-style: none;
+        display: flex;
+    }
+    .nav-links {
+        padding: .6em;
+        margin: .6em;
+        border: 1px solid black;
+    }
+}
+.header {
+    padding-top: 35%;
+    justify-content: center;
+}
+h1#animated-header {
+    font-family: sans-serif;
+}
+span {
+    opacity: 0;
+    transition: all .5s ease;
+    transform: translateY(-200px);
+    display: inline-block;
+}
+span.fade {
+    opacity: 1;
+    transform: translateY(00px);
+}
+
+@media (min-width: 576px) {
+    .col {
+        display: flex;
+        flex: 1;
+        min-height: 15em;
+    }
+    .col-2 {
+        display: flex;
+        flex: 2;
+        min-height: 15em;
+    }
+    .col-sm-order-1 {
+        order: 0;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .header {
+        padding-top: 15%;
+        justify-content: center;
+    }
+    .tada-fixed {
+        display: -ms-flexbox;
+        display: flex;
+        border: 1px solid black;
+        position: fixed;
+        overflow: hidden;
+        margin: .2em;
+        min-width: 97%;
+        background-color: white;
+        .nav-buttons {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links {
+            padding: 1em;
+            margin: 1em;
+            border: 1px solid black;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    .img-box {
+        height: 75%;
+        width: 85%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .tada-section-image {
+        height: auto;
+        width: 65%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+h1 {
+font-size: 2.9rem;
+}
+h2 {
+font-size: 2.5rem;
+}
+h3 {
+font-size: 2rem;
+}
+h4 {
+font-size: 1.5rem;
+}
+h5 {
+font-size: 1rem;
+}
+h6 {
+font-size: .5rem;
+}
+p {
+font-size: 1rem;
+}
+@media (min-width:2000px) {
+    /* .f-xxl-3{
+        font-size: 3rem
+    } */
+    html { 
+        font-size: 16px; 
+    }
+    .pb-5 {
+        padding-bottom: 16px;
+    }
+    .p-5 {
+        padding: 16px;
+    }
+}
+@media (min-width:3000px) {
+    /* .f-xxxl-5 {
+        font-size: 5rem;
+    } */
+    html { 
+        font-size: 32px;
+    }
+    .pb-5 {
+        padding-bottom: 42px;
+    }
+    .p-5 {
+        padding: 42px;
+    }
+    .tada-section-image {
+        height: auto;
+        width: 55%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+@media (min-width:4000px) {
+    /* .f-xxxxl-6 {
+        font-size: 6rem;
+    } */
+    html { 
+        font-size: 42px; 
+    }
+    .pb-5 {
+        padding-bottom: 52px;
+    }
+    .p-5 {
+        padding: 52px;
+    }
+    .tada-section-image {
+        height: auto;
+        width: 65%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+@media (min-width:5000px) {
+    /* .f-xxxxxl-7 {
+        font-size: 7rem;
+    } */
+    html { 
+        font-size: 52px;
+    }
+    .pb-5 {
+        padding-bottom: 52px;
+    }
+    .p-5 {
+        padding: 52px;
+    }
+    .tada-section-image {
+        height: auto;
+        width: 55%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+@media (min-width:6000px) {
+    /* .f-xxxxxxl-8 {
+        font-size: 8rem;
+    } */
+    html { 
+        font-size: 62px; 
+    }
+    .pb-5 {
+        padding-bottom: 62px;
+    }
+    .p-5 {
+        padding: 62px;
+    }
+}
+@media (min-width:7000px) {
+    /* .f-xxxxxxxl-9 {
+        font-size: 8rem;
+    } */
+    html { 
+        font-size: 72px; 
+    }
+    .pb-5 {
+        padding-bottom: 72px;
+    }
+    .p-5 {
+        padding: 72px;
+    }
+}
+@media (min-width:8000px) {
+    /* .f-xxxxxxxxl-10{
+        font-size: 10rem
+    } */
+    html { 
+        font-size: 82px; 
+    }
+    .pb-5 {
+        padding-bottom: 82px;
+    }
+    .p-5 {
+        padding: 82px;
+    }
+}
+@media (min-width:9000px) {
+    /* .f-xxxxxxxxxl-11 {
+        font-size: 11em;
+    } */
+    html { 
+        font-size: 92px;
+        }
+        .pb-5 {
+            padding-bottom: 92px;
+        }
+        .p-5 {
+            padding: 92px;
+        }
+}
