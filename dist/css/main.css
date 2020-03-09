@@ -32,6 +32,7 @@ body {
   width: 100%;
   min-height: 5em;
   text-align: center;
+  border: 1px solid red;
 }
 
 .col-2 {
@@ -44,6 +45,7 @@ body {
   width: 100%;
   min-height: 5em;
   text-align: center;
+  border: 1px solid red;
 }
 
 .col-sm-order-1 {
@@ -253,6 +255,10 @@ span.fade {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  h1#animated-header {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 5.5rem;
   }
 }
 
