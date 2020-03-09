@@ -29,13 +29,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   min-height: 5em;
   text-align: center;
 }
@@ -47,13 +41,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   min-height: 5em;
   text-align: center;
 }
@@ -109,6 +97,11 @@ body {
   text-align: center;
 }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -143,6 +136,14 @@ body {
   border: 1px solid black;
 }
 
+.tada-section-image {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header {
   padding-top: 35%;
   -webkit-box-pack: center;
@@ -167,6 +168,7 @@ span.fade {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+  color: #00abf4;
 }
 
 @media (min-width: 576px) {

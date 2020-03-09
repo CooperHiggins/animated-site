@@ -23,18 +23,14 @@ body {
 .col {
     display: flex;
     flex: 1;
-    flex-direction: column;
     width: 100%;
-    flex-wrap: wrap;
     min-height: 5em;
     text-align: center;
 }
 .col-2 {
     display: flex;
     flex: 1;
-    flex-direction: column;
     width: 100%;
-    flex-wrap: wrap;
     min-height: 5em;
     text-align: center;
 }
@@ -67,6 +63,9 @@ body {
 .text-center {
     text-align: center;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .m-auto {
     margin: auto;
 }
@@ -93,6 +92,13 @@ body {
         border: 1px solid black;
     }
 }
+.tada-section-image {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 .header {
     padding-top: 35%;
     justify-content: center;
@@ -109,6 +115,7 @@ span {
 span.fade {
     opacity: 1;
     transform: translateY(00px);
+    color: rgb(0, 171, 244);
 }
 
 @media (min-width: 576px) {
