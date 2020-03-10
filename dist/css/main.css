@@ -11,11 +11,11 @@
 }
 
 .bg-grey {
-  background-color: #ebe8e8;
+  background-color: #9ACE32;
 }
 
 .bg-red {
-  background-color: red;
+  background-color: #DC143C;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
   max-width: 100%;
   min-height: 5em;
   text-align: center;
-  border: 1px solid red;
+  border: 1px solid #DC143C;
   margin: .5em;
 }
 
@@ -46,7 +46,7 @@ body {
   max-width: 100%;
   min-height: 5em;
   text-align: center;
-  border: 1px solid red;
+  border: 1px solid #DC143C;
   margin: .5em;
 }
 
@@ -124,8 +124,8 @@ body {
   margin-left: .5%;
   margin-right: .4%;
   min-width: 99%;
-  background-color: #D94069;
-  color: #4BD943;
+  background-color: #DC143C;
+  color: #9ACE32;
   z-index: 1;
 }
 
@@ -134,12 +134,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .tada-fixed .nav-links {
   padding: .6em;
   margin: .6em;
-  border: 1px solid black;
+  border: 2px solid #FFD802;
+}
+
+.tada-fixed .nav-links:hover {
+  background-color: #9ACE32;
+  color: #FFD802;
 }
 
 .tada-section-image {

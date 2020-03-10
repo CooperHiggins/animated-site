@@ -1,5 +1,7 @@
-$tadaRed: red;
-$tadaGrey: rgb(235, 232, 232);
+$tadaRed: #DC143C;
+$tadaCoral: #FF6348;
+$tadaGreen: #9ACE32;
+$tadaYellow: #FFD802;
 $tadaBorderBlack: 2px solid black;
 //make padding and margin utilitites repsonsive based on root element
 * {
@@ -12,7 +14,7 @@ $tadaBorderBlack: 2px solid black;
     height: auto;
 }
 .bg-grey {
-    background-color: $tadaGrey;
+    background-color: $tadaGreen;
 }
 .bg-red {
     background-color: $tadaRed;
@@ -85,17 +87,22 @@ body {
     margin-left: .5%;
     margin-right: .4%;
     min-width: 99%;
-    background-color: #D94069;
-    color: #4BD943;
+    background-color: $tadaRed;
+    color: $tadaGreen;
     z-index: 1;
     .nav-buttons {
         list-style: none;
         display: flex;
+        font-family: 'Fjalla One', sans-serif;
     }
     .nav-links {
         padding: .6em;
         margin: .6em;
-        border: 1px solid black;
+        border: 2px solid $tadaYellow;
+    }
+    .nav-links:hover {
+        background-color: $tadaGreen;
+        color: $tadaYellow;
     }
 }
 .tada-section-image {
@@ -127,6 +134,8 @@ span.fade {
     transform: translateY(00px);
     color: rgb(0, 171, 244);
 }
+
+
 
 @media (min-width: 576px) {
     .col {

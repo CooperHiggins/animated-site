@@ -17,42 +17,47 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
-            <div class="col">
-                <h2 class="">Animated Header</h2>
-            </div>
+            form.machine
+	input(type="checkbox",id="fire",name="fire",value="fire")
+	button.machine__btn(type="button",aria-labelledby="left-btn",ontouchstart="")
+		span.left-arrow
+		span.sr(id="left-btn")="Left"
+	button.machine__btn(type="button",aria-labelledby="right-btn",ontouchstart="")
+		span.right-arrow
+		span.sr(id="right-btn")="Right"
+	button.machine__btn(type="button",aria-labelledby="up-btn",ontouchstart="")
+		span.up-arrow
+		span.sr(id="up-btn")="Forward"
+	button.machine__btn(type="button",aria-labelledby="down-btn",ontouchstart="")
+		span.down-arrow
+		span.sr(id="down-btn")="Backward"
+	label.machine__btn.machine__btn--red(for="fire",role="button",aria-labelledby="fire-btn")
+		span(id="fire-btn")="Get"
+	button.machine__btn.machine__btn--red(type="button",aria-labelledby="fake-fire-btn",ontouchstart="")
+		span(id="fake-fire-btn")="Get"
+	.machine__roof="Win All the Things"
+	.machine__window
+		.machine__crane-z
+			.machine__crane-x
+				.machine__crane-arm
+					.machine__crane-claw
+						.machine__crane-finger
+						.machine__crane-finger
+						.machine__crane-finger
+						.machine__crane-palm
+						.machine__prize
+		- var prizeLayers = 3;
+		- var prizesPerLayer = 60;
+		- for (let l = 0; l < prizeLayers; ++l) {
+			.machine__prizes
+				- for (let p = 0; p < prizesPerLayer; ++p) {
+					.machine__prize
+				- }
+		- }
+	.machine__op-area
+	.machine__prize-door
+	.machine__vents
+	.machine__feet
         </div>
     </div>
 </body>
